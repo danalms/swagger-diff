@@ -930,6 +930,11 @@
         "name",
         "photoUrls"
       ],
+      "allOf": [
+        {
+           "$ref": "#/definitions/ExampleAllOf"
+        }
+     ],
       "properties": {
         "id": {
           "type": "integer",
@@ -1001,7 +1006,16 @@
           "type": "string"
         }
       }
-    }
+    },
+    "ExampleAllOf": {
+      "type": "object",
+      "description": "allOf example",
+      "properties": {
+         "test": {
+          "type": "string"
+         }
+      }
+   }
   },
   "externalDocs": {
     "description": "Find out more about Swagger",
